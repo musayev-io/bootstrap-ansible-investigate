@@ -1,0 +1,130 @@
+---
+downloads: ~/.ansible-downloads/
+
+configure_dotfiles: false
+configure_terminal: false
+configure_osx: false
+
+dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
+dotfiles_repo_accept_hostkey: true
+dotfiles_repo_local_destination: ~/Development/GitHub/dotfiles
+dotfiles_files:
+  - .zshrc
+  - .osx
+
+homebrew_installed_packages:
+  - autoconf
+  - gettext
+  - git
+  - go
+  - iperf
+  - libevent
+  - sqlite
+  - nmap
+  - node
+  - nvm
+  - ssh-copy-id
+  - readline
+  - openssl
+  - pv
+  - wget
+  - yarn
+  - aws-shell
+  - awscli
+  - curl
+  - ffmpeg
+  - mtr
+  - pyenv
+  - pyenv-virtualenv
+  - speedtest-cli
+  - tree
+  - zsh
+  - zsh-autosuggestions
+  - zsh-completions
+  - zsh-syntax-highlighting
+  - youtube-dl
+  - wifi-password
+  
+homebrew_taps:
+  - homebrew/core
+  - homebrew/cask
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  # - docker
+  # - firefox
+  # - google-chrome
+  # - sequel-pro
+  # - slack
+  # - mockoon
+  # - 1password
+  # - cleanshot
+  # - discord
+  # - iterm2
+  # - calibre
+  # - sizzy
+  # - spotify
+  # - figma
+  # - nosql-workbench
+  # - sip
+  # # requires password
+  # - notion 
+  # # requires password
+  # - krisp
+  # - karabiner-elements
+  # - polymail
+  # - keka
+  # - bettertouchtool
+  # - pdf-expert
+  # - tower
+  # - grammarly
+  # - vlc
+  # - app-cleaner
+  # - google-backup-and-sync
+  # - dash
+  # - insomnia
+  # - insomnia-designer
+  # - hiddenbar
+
+
+
+
+# See `geerlingguy.mas` role documentation for usage instructions.
+mas_installed_apps: 
+    - { id: 937984704, name: "Amphetamine" }
+    - { id: 775737590, name: "iA Writer" }
+    - { id: 975937182, name: "Fantastical" }
+    - { id: 973134470, name: "Be Focused" }
+    - { id: 1176895641, name: "Spark" }
+    - { id: 441258766, name: "Magnet" }
+    - { id: 557090104, name: "Clearview" }
+    - { id: 967805235, name: "Paste" }
+    - { id: 1504024265, name: "Micro Sniff" }
+    - { id: 497799835, name: "Xcode" }
+mas_email: ""
+mas_password: ""
+
+osx_script: "~/.osx --no-restart"
+
+# Install packages from other package managers.
+# Note: You are responsible for making sure the required package managers are
+# installed, eg. through homebrew.
+composer_packages: []
+# - name: drush
+#   state: present # present/absent, default: present
+#   version: "^8.1" # default: N/A
+gem_packages: []
+# - name: bundler
+#   state: present # present/absent/latest, default: present
+#   version: "~> 1.15.1" # default: N/A
+npm_packages: []
+# - name: webpack
+#   state: present # present/absent/latest, default: present
+#   version: "^2.6" # default: N/A
+pip_packages: []
+# - name: mkdocs
+#   state: present # present/absent/latest, default: present
+#   version: "0.16.3" # default: N/A
+
+# Glob pattern to ansible task files to run after all other tasks are finished.
+post_provision_tasks: []
